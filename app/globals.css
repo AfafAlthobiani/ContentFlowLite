@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-high-density-bg: #FDFCFB;
+  --color-high-density-sidebar: #F9F8F6;
+  --color-high-density-ink: #121212;
+  --color-high-density-border: #EAE8E4;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  background-color: var(--color-high-density-bg);
+  color: var(--color-high-density-ink);
+}
